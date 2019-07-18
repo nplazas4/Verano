@@ -27,11 +27,8 @@
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
+    <?= $this->Html->script(['jquery-3.3.1.min.js']) ?>
     <?= $this->Html->css('materialize.css') ?>
-    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
-
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
@@ -59,30 +56,10 @@
     <footer class="footer">
         <div class="footer-content">
             <figure><?= $this->Html->image('logos/Logo_verano.png') ?></figure>
-            <!-- <figure></?= $this->Html->image('mmcv.png') ?></figure> -->
             <ul class="footer-info">
-                <!-- <li>Of. Principal Cra. 9 # 73-44 Piso 6 </li>
-                <li>PBX: (571)3268000 - FAX: (571)3268010</li>
-                <li>Bogotá D.C., Colombia</li> -->
+                <!-- <li>Disclaimer info.</li>-->
             </ul>
         </div>
     </footer>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('select').formSelect();
-            $('.tooltipped').tooltip();
-            $('.modal').modal();
-            $('.collapsible').collapsible();
-            $('.dropdown-trigger').dropdown();
-            $('.dropdown-hover').dropdown({
-                hover: true,
-            });
-        });
-    </script>
 </body>
 </html>

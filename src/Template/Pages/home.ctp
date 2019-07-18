@@ -48,25 +48,27 @@
             </figure>
             <h2 class="primary">OBIEE</h2>
         </a>
-        <a href="#" class="portal-projects-menu-item secondary-text disabled-color disabled">
+        <a class="portal-projects-menu-item secondary-text disabled-color">
             <figure>
                 <?= $this->Html->image('logos/Sin_título.png') ?>
             </figure>
             <h2 class="primary">OPPM</h2>
         </a>
-        <a href="https://cloudverano.com.co/analytics" class="portal-projects-menu-item secondary-text disabled-color disabled">
+        <!-- href="https://cloudverano.com.co/analytics" -->
+        <a class="portal-projects-menu-item secondary-text disabled-color">
             <figure>
                 <?= $this->Html->image('logos/Sin_título.png') ?>
             </figure>
             <h2 class="primary">Analytics</h2>
         </a>
-        <a href="#" class="portal-projects-menu-item secondary-text disabled-color disabled">
+        <a class="portal-projects-menu-item secondary-text disabled-color">
             <figure>
                 <?= $this->Html->image('logos/Sin_título.png') ?>
             </figure>
             <h2 class="primary">Monitoring</h2>
         </a>
-        <a href="https://cloudverano.com.co/p6ws" class="portal-projects-menu-item secondary-text disabled-color disabled">
+        <!-- href="https://cloudverano.com.co/p6ws" -->
+        <a class="disabled-color portal-projects-menu-item secondary-text">
             <figure>
                 <?= $this->Html->image('logos/Sin_título.png') ?>
             </figure>
