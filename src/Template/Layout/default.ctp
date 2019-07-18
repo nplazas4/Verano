@@ -16,10 +16,6 @@
     $cakeDescription = 'Verano';
 
     // Datos de usuario
-    $user = [
-        'avatar' => 'A',
-        'name' => 'Administrador',
-    ];
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +39,6 @@
 <body>
     <header class="header">
         <div class="header-wrapper">
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons primary-text">menu</i></a>
             <?php echo $this->Html->link(
               $this->Html->image('logos/Logo_verano.png'),
               ['controller'=>'Pages', 'action'=>'home'],
@@ -52,33 +47,10 @@
             <nav data-topbar role="navigation">
             </nav>
             <div class="header-user dropdown-trigger" data-target='dropdownUser'>
-                <div class="header-user-content">
-                    <h2><?= $user['name'] ?></h2>
-                </div>
-                <div class="header-user-avatar"><?= $user['avatar'] ?></div>
+                <h3 class="primary-text"><small>Verano Cloud</small></h3>
             </div>
-            <ul id='dropdownUser' class='dropdown-content'>
-                <li class="dropdown-user">
-                    <div class="header-user-avatar"><?= $user['avatar'] ?></div>
-                    <div class="dropdown-user-content">
-                        <h2><?= $user['name'] ?></h2>
-                    </div>
-                </li>
-                <li class="divider primary" tabindex="-1"></li>
-                <li><a href="/login" class="primary-text"><i class="material-icons">exit_to_app</i>Salir</a></li>
-            </ul>
-        </div>
+         </div>
     </header>
-
-    <ul id="slide-out" class="sidenav">
-        <li>
-            <div class="user-view primary ma-0">
-                <h2 class="white-text name"><?= $user['name'] ?></h2>
-            </div>
-        </li>
-        <li><a href="/login"><i class="material-icons mr-2">exit_to_app</i>Salir</a></li>
-    </ul>
-
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>

@@ -12,7 +12,7 @@
 }
 
 .secondary-text {
-  color: #A6CE39 !important;
+  color: #dc5b46 !important;
 }
 
 .secondary.darken-1 {
@@ -10506,5 +10506,16 @@ input[type=range]::-ms-thumb {
   margin: 0;
   line-height: 1;
 }
-
+.disabled-color{
+  background-color: #D3D3D3;
+  position:relative;
+  opacity: 0.1;
+  -moz-opacity: 1%;
+  -webkit-opacity: 1%;
+  z-index: 1;
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
 /*# sourceMappingURL=materialize.css.map */
